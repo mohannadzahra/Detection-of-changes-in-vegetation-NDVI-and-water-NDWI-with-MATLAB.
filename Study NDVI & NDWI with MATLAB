@@ -11,7 +11,7 @@ jpg5 = 'T32UPE_20210605T102021_B04.jp2'; % band 4 (Red) 2021
 jpg6 = 'T32UPE_20210605T102021_B08.jp2'; % band 8 (NIR) 2021
 
 
-
+#We use imread function to read the tif image.
 B03_2019 = imread(jpg1);
 B04_2019 = imread(jpg2);
 B08_2019 = imread(jpg3);
@@ -19,7 +19,7 @@ B03_2021 = imread(jpg4);
 B04_2021 = imread(jpg5);
 B08_2021 = imread(jpg6);
 
-We clip the image of the  area to the area of theby typing:
+#We clip the image of the  area to the area of theby typing:
 %clip = [500:7500,1000:8000];
 B033_2019 = B03_2019(500:7500,1000:8000);
 B044_2019 = B04_2019(500:7500,1000:8000);
@@ -28,7 +28,7 @@ B033_2021 = B03_2021(500:7500,1000:8000);
 B044_2021 = B04_2021(500:7500,1000:8000);
 B088_2021 = B08_2021(500:7500,1000:8000);
 
-Next we convert the  uint16 data to single precision for calculations.
+#Next we convert the  uint16 data to single precision for calculations.
 B033_2019 = single(B033_2019);
 B044_2019 = single(B044_2019);
 B088_2019 = single(B088_2019);
@@ -36,7 +36,7 @@ B033_2021 = single(B033_2021);
 B044_2021 = single(B044_2021);
 B088_2021 = single(B088_2021);
 
-For display of the images we calculate the 5% and 95% percentiles.
+#For display of the images we calculate the 5% and 95% percentiles.
 B03_2019_05 = prctile(reshape(B033_2019,1,numel(B033_2019)), 5);
 B03_2019_95 = prctile(reshape(B033_2019,1,numel(B033_2019)),95);
 B04_2019_05 = prctile(reshape(B044_2019,1,numel(B044_2019)), 5);
