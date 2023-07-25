@@ -261,10 +261,14 @@ we have decided to separate the indices on our repository as NDMI using NIR-SWIR
 -	Conclusion:
 
 •	After studying the values, we can determine the impact of the heat wave in 2019, which was clear from the results we received
-•	Overall, NDVI is a standardized way to measure healthy vegetation. When we have high NDVI values, we have healthier vegetation. When you have low NDVI, you have less or no vegetation.
+•	Overall, NDVI is a standardized way to measure healthy vegetation. When we have high NDVI values, we have healthier vegetation. 
+   When you have low NDVI, you have less or no vegetation.
 •	Whenever there is a need to detect a water body, represents on the map, and monitor changes in its clarity, the NDWI index is applied.
-•	In the area of study, the influence of the agricultural areas is more and greater than the water bodies at the land surface temperature, both of which have a negative correlation with the land surface temperature.
-•	The relationship between the land surface temperatures derived from sentinal-2 satellites and the indicators of land cover, gave an indication of the possibility of monitoring many phenomena related to the Earth's surface such as desertification, urban development and expansion, drought, and wetlands.
+•	In the area of study, the influence of the agricultural areas is more and greater than the water bodies at the land surface temperature,
+   both of which have a negative correlation with the land surface temperature.
+•	The relationship between the land surface temperatures derived from sentinal-2 satellites and the indicators of land cover, 
+   gave an indication of the possibility of monitoring many phenomena related to the Earth's surface such as desertification, 
+   urban development and expansion, drought, and wetlands.
 
 
 -	References:
