@@ -29,6 +29,11 @@ B044_2021 = B04_2021(500:7500,1000:8000);
 B088_2021 = B08_2021(500:7500,1000:8000);
 
 #Next we convert the  uint16 data to single precision for calculations.
+"because uint16 is an unsigned 16-bit integer data type,which means it can represent integer values from 0 to 65535.
+On the other hand, the single precision (float32) is a 32-bit floating-point data type that can represent both integer 
+and fractional values, including numbers with decimal points.It offers a larger range of representable numbers and greater
+precision compared to uint16."
+
 B033_2019 = single(B033_2019);
 B044_2019 = single(B044_2019);
 B088_2019 = single(B088_2019);
@@ -37,6 +42,10 @@ B044_2021 = single(B044_2021);
 B088_2021 = single(B088_2021);
 
 #For display of the images we calculate the 5% and 95% percentiles.
+"Calculating the 5th and 95th percentiles is often done as a part of contrast stretching or histogram equalization techniques
+for image enhancement and display. These percentiles are used to scale the intensity values of the image, effectively expanding
+the range of pixel values and enhancing the overall contrast of the image."
+
 B03_2019_05 = prctile(reshape(B033_2019,1,numel(B033_2019)), 5);
 B03_2019_95 = prctile(reshape(B033_2019,1,numel(B033_2019)),95);
 B04_2019_05 = prctile(reshape(B044_2019,1,numel(B044_2019)), 5);
